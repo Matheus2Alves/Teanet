@@ -12,6 +12,10 @@ html, body{
   
 }
 
+a{
+  text-decoration: none;
+}
+
 header{
   position: fixed;
   background-color: #034aa3;
@@ -19,13 +23,16 @@ header{
   width: 100vw;
 }
 
+header h1{
+  padding-left: 5px;
+}
+
 #maintxt{
   position: absolute;
   left: 50%;
-  top: 45%;
+  top: 35%;
   transform: translate(-50%, -50%);
-  margin: auto;
-  width: 440px;
+  max-width: 440px;
   
 }
 
@@ -39,14 +46,40 @@ h2.txtmain{
   text-align:justify;
 }
 
+.btt{
+  position: relative;
+  margin-top: 20px;
+}
+
+.misson {
+  position: absolute;
+  top: 0;
+}
+
+.tecnology{
+  position: absolute;
+  top: 140%;
+  left: 3.7%;
+}
+
+
 .button{
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid #e7c224;
   border-radius: 20px;
-  width: 155px ;
+  width: 255px ;
   height: 53px;
   text-align: center;
-  margin-top: 30px;
+  /*&margin-top: 30px;*/
+  background-color: #e7c224;
+}
+
+.button:hover{
+  box-shadow: 3px 3px 15px #034ba387;
+}
+
+.button > a {
+  color: #034aa3;
 }
 
 .mission{
@@ -63,7 +96,7 @@ h2.txtmain{
 
 #chatbot{
   position: absolute;
-  top: 550px;
+  top: 500px;
   left: 30px;
 
 }
@@ -100,7 +133,7 @@ footer > p{
 #arrow{
   position: absolute;
   left: 55vw;
-  top: 50px;
+  top: 40px;
 
 
 }
