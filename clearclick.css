@@ -1,81 +1,74 @@
 @charset "UTF-8";
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f2f2f2;
-  }
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  width: 100vw;
+  height: 100vh;
   
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-  }
+}
+
+header{
+  background-color: #034aa3;
+  padding: 10px;
+}
+
+#maintxt{
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  width: 440px;
   
-  .navbar-burger {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .navbar-burger span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    margin: 5px;
-    background-color: #333;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .navbar-links {
-    display: flex;
-  }
-  
-  .navbar-links a {
-    margin-left: 20px;
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .navbar-burger {
-      display: block;
-    }
-  
-    .navbar-links {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      background-color: #f2f2f2;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-    }
-  
-    .navbar-links a {
-      margin: 10px 0;
-    }
-  
-    .navbar-links.active {
-      display: flex;
-    }
-  
-    .navbar-burger.active span:first-child {
-      transform: rotate(45deg);
-      margin-bottom: 0;
-    }
-  
-    .navbar-burger.active span:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .navbar-burger.active span:last-child {
-      transform: rotate(-45deg);
-      margin-top: 0;
-    }
-  }
-  
+}
+
+h2.txtmain{
+  font-size: 3em;
+  font-variant: small-caps;
+}
+
+.ptxtmain{
+  line-height: 1.5em;
+  text-align:justify;
+}
+
+.button{
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 155px ;
+  height: 53px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.mission{
+  margin-right: 60px;
+  margin-left: 10px;
+}
+
+.button > a{
+  display: inline-block;
+  margin-top: 8px;
+  font-variant: small-caps;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#burguer{
+  position: absolute;
+  left: 93vw;
+  top: 3vh;
+  color: white;
+}
+
+#arrow{
+  position: absolute;
+  left: 85vw;
+  /*top: 90vh;*/
+
+}
