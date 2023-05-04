@@ -13,6 +13,7 @@ html, body{
 }
 
 header{
+  position: fixed;
   background-color: #034aa3;
   padding: 10px;
   width: 100vw;
@@ -60,6 +61,35 @@ h2.txtmain{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#chatbot{
+  position: absolute;
+  top: 550px;
+  left: 30px;
+
+}
+
+#chatbot > h2{
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #034aa3;
+  width: 100%;
+  height: 50px;
+}
+
+
+
+footer > p{
+  font-size: 1.3em;
+}
+
 #burguer{
   position: absolute;
   left: 93vw;
@@ -69,7 +99,8 @@ h2.txtmain{
 
 #arrow{
   position: absolute;
-  left: 85vw;
-  /*top: 90vh;*/
+  left: 55vw;
+  top: 50px;
+
 
 }
