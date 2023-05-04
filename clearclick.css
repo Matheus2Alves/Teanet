@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-html{
+html, body{
   width: 100vw;
   height: 100vh;
   
@@ -62,7 +62,7 @@ h2.txtmain{
 #burguer{
   position: absolute;
   left: 93vw;
-  top: 3vh;
+  top: 2.5vh;
   color: white;
 }
 
