@@ -12,6 +12,12 @@ html, body{
   
 }
 
+body{
+  background: black url(../imagens/backmainn2.png) no-repeat fixed ;
+  background-size: cover;
+  
+}
+
 a{
   text-decoration: none;
 }
@@ -32,8 +38,11 @@ header h1{
   left: 50%;
   top: 35%;
   transform: translate(-50%, -50%);
-  max-width: 440px;
-  
+  color: white;
+}
+
+.yell{
+  color: #ffffa3;
 }
 
 h2.txtmain{
@@ -44,6 +53,7 @@ h2.txtmain{
 .ptxtmain{
   line-height: 1.5em;
   text-align:justify;
+  text-shadow: 4px 4px 10px black;
 }
 
 .btt{
@@ -64,7 +74,9 @@ h2.txtmain{
 
 
 .button{
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #e7c224;
   border-radius: 20px;
   width: 255px ;
@@ -96,8 +108,9 @@ h2.txtmain{
 
 #chatbot{
   position: absolute;
-  top: 500px;
+  top: 530px;
   left: 30px;
+  color: white;
 
 }
 
@@ -121,6 +134,7 @@ footer{
 
 footer > p{
   font-size: 1.3em;
+  color: white;
 }
 
 #burguer{
@@ -131,9 +145,6 @@ footer > p{
 }
 
 #arrow{
-  position: absolute;
-  left: 55vw;
-  top: 40px;
-
-
+  padding: 15px;
+  color: #e7c224;
 }
