@@ -9,6 +9,7 @@
 html, body{
     width: 100vw;
     height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -45,7 +46,11 @@ header{
 #arrow-down{
     font-size: 65px;
     grid-row: 2;
-   
+    color: white;
+}
+
+#arrow-down:hover{
+    color: #ffffa3;
 }
 
 .fundo-img > h2{
@@ -57,7 +62,7 @@ header{
 .fundo-img > p{
     padding: 40px;
     font-size: 1.7em;
-    font-weight: bolder;
+    font-weight: 600;
     line-height: 1.6em;
 }
 
@@ -65,7 +70,7 @@ header{
     height: 100%;
     padding: 40px;
     font-size: 1.7em;
-    font-weight: bolder;
+    font-weight: 600;
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
@@ -93,20 +98,48 @@ header{
     padding: 15px;
     border-radius: 20px;
     color: #034aa3;
+    font-weight: 600;
+}
+
+.button:hover{
+    background-image: linear-gradient(95deg, #ffffa3, #e7c224);
 }
 
 .palavra-final{
     color: #e7c224;
     font-size: 1.5em;
-    font-family: ;
+    margin-top: 40px;
+}
+
+.amarelopalido{
+    color: #e7c224;
 }
 
 strong{
-    color: #c2daff
+    color: #c2daff;
+}
+
+footer{
+    background-color: #034aa3;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #ffffa3;
 }
 
 @keyframes mudar-cor {
     from {background-color: #034aa3;}
     to {background-color: #d4d4d4;}
   }
+
+
   
