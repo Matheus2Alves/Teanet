@@ -88,6 +88,23 @@ header{
     background-size: cover;
 }
 
+.button{
+    background-color: #e7c224;
+    padding: 15px;
+    border-radius: 20px;
+    color: #034aa3;
+}
+
+.palavra-final{
+    color: #e7c224;
+    font-size: 1.5em;
+    font-family: ;
+}
+
+strong{
+    color: #c2daff
+}
+
 @keyframes mudar-cor {
     from {background-color: #034aa3;}
     to {background-color: #d4d4d4;}
