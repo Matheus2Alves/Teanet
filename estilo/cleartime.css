@@ -33,43 +33,53 @@ header{
 }
 
 .fundo-img {
-    height: 400px;
+    height: 100%;
     color: white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center; 
-    grid-template-columns: repeat(3,1fr);  
+    box-shadow: 3px 2px 20px 7px rgba(0, 0, 0, 0.565);;
 }
 
 #arrow-down{
     font-size: 65px;
     grid-row: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-column: 2;
-    width: 360px;
+   
 }
 
 .fundo-img > h2{
     font-size: 4em;
     font-variant: small-caps;
-    grid-row: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
+  
+}
+
+.fundo-img > p{
+    padding: 40px;
+    font-size: 2em;
+    font-weight: bolder;
+    line-height: 1.6em;
 }
 
 .fundo-clear{
-    height: 400px;
-
+    height: 100%;
+    padding: 40px;
+    font-size: 2em;
+    font-weight: bolder;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .img1{
-    background: rgb(255, 255, 255) url(../imagens/pessoas\ conversando.png) no-repeat bottom center fixed;
+    background: rgb(255, 255, 255) url(../imagens/quemsomos.png) no-repeat bottom center fixed;
     background-size: cover;
 }
 
 .img2{
-    background: white url(../imagens/quemsomos.png) no-repeat  center center fixed ;
+    background: white url(../imagens/pessoas\ conversando.png) no-repeat  center center fixed ;
     background-size: cover;
 }
 
