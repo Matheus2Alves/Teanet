@@ -8,14 +8,12 @@
 
 html, body{
   width: 100vw;
-  height: 100vh;
-  
+  height: 100vh; 
 }
 
 body{
-  background: black url(../imagens/backmainn2.png) no-repeat fixed ;
-  background-size: cover;
-  
+  background: #034aa3 url(../imagens/backmainn2.png) no-repeat fixed ;
+  background-size: cover; 
 }
 
 a{
@@ -23,21 +21,33 @@ a{
 }
 
 header{
-  position: fixed;
   background-color: #034aa3;
   padding: 10px;
-  width: 100vw;
+  height: 60px;
 }
 
 header h1{
   padding-left: 5px;
 }
 
+main{
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+  height: 100vh;
+}
+
+.coluna{
+  justify-self: center;
+  align-self: center;
+}
+
 #maintxt{
-  position: absolute;
-  left: 50%;
-  top: 35%;
-  transform: translate(-50%, -50%);
+  grid-column: 1;
   color: white;
 }
 
@@ -57,21 +67,26 @@ h2.txtmain{
 }
 
 .btt{
-  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
 .misson {
-  position: absolute;
-  top: 0;
+  
+ 
 }
 
 .tecnology{
-  position: absolute;
-  top: 140%;
-  left: 3.7%;
+  margin-left: 10px;
 }
 
+.button:hover{
+  background-image: linear-gradient(95deg, #ffffa3, #e7c224);
+}
 
 .button{
   display: flex;
@@ -81,7 +96,6 @@ h2.txtmain{
   border-radius: 20px;
   width: 255px ;
   height: 53px;
-  text-align: center;
   /*&margin-top: 30px;*/
   background-color: #e7c224;
 }
@@ -106,27 +120,22 @@ h2.txtmain{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#chatbot{
-  position: absolute;
-  top: 530px;
-  left: 30px;
+.chatbot{
+  grid-column: 1;
   color: white;
-
 }
 
-#chatbot > h2{
+.chatbot > h2{
   font-size: 2em;
   line-height: 1.2em;
 }
 
-footer{
-  position: fixed;
+footer{ 
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #034aa3;
-  width: 100%;
   height: 50px;
 }
 
@@ -138,10 +147,23 @@ footer > p{
 }
 
 #burguer{
-  position: absolute;
-  left: 93vw;
-  top: 2.5vh;
+  position: fixed;
+  top: 13px;
+  right: 10px;
   color: white;
+  font-size: 35px;
+}
+
+.menu-hamburguer-scroll {
+  background-color: #d4d4d4;
+  padding: 5px;
+  border-radius: 15px;
+  animation: mudar-cor 0.5s ease-in-out;
+}
+
+@keyframes mudar-cor {
+  from {background-color:#034aa3;}
+  to {background-color: #d4d4d4 }
 }
 
 #arrow{
