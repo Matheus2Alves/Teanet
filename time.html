@@ -22,14 +22,14 @@
     <header>
         <h1><span class="clear">Clear</span>Click</h1>
         <a href=""><span class="material-symbols-outlined" id="burguer">menu</span></a>
-        <!--<nav>
+        <nav id="menu-dropdown">
             <ul>
                 <li><a href="">Home</a></li> 
                 <li><a href="">Tecnologias</a></li>   
                 <li><a href="">Time</a></li>   
                 <li><a href="">ClearNews</a></li>  
             </ul>
-        </nav>-->
+        </nav>
     </header>
     <section class="fundo-img img1">
         <h2>Quem somos</h2>
@@ -57,5 +57,18 @@
     <footer>
         <a href="">ClearClick</a>
     </footer>
+    <script>
+        document.getElementById('burguer').addEventListener('click', function() {
+            event.stopPropagation(); 
+            document.querySelector('header').classList.toggle('menu-open');
+            });
+        document.addEventListener('click', function(event) {
+        var menu = document.querySelector('header');
+        var target = event.target;
+        if (!menu.contains(target)) { // Verifica se o clique ocorreu fora do menu
+            menu.classList.remove('menu-open');
+        }
+    });
+    </script>
 </body>
 </html>

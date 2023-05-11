@@ -18,24 +18,16 @@
     <script src="./script/cleartecno.js"></script>
     <header>
         <h1><span class="clear">Clear</span>Click</h1>
-        <a href=""><span class="material-symbols-outlined " id="burguer">menu</span></a>        
-       <!-- <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="tecno.html">
-                    <li>Tecnologias</li>
-                </a>
-                <a href="time.html">
-                    <li>time</li>
-                </a>
-                <a href="#">
-                    <li>ClearNews</li>
-                </a>
+        <span class="material-symbols-outlined " id="burguer">menu</span>       
+        <nav id="menu-dropdown">
+            <ul>              
+                <li><a href="index.html">Home</a></li>                
+                <li><a href="tecno.html">Tecnologias</a><li>                         
+                <li><a href="time.html">time</a></li>         
+                <li><a href="#">ClearNews</a></li>        
             </ul>
         </nav>
-        -->
+        
     </header>
     <main class="container">
         <section class="tecnologiasBox coluna">
@@ -72,6 +64,18 @@
             <p>@ClearClcik</p>
         </a>
     </footer>
-    
+    <script>
+        document.getElementById('burguer').addEventListener('click', function() {
+            event.stopPropagation(); 
+            document.querySelector('header').classList.toggle('menu-open');
+            });
+        document.addEventListener('click', function(event) {
+        var menu = document.querySelector('header');
+        var target = event.target;
+        if (!menu.contains(target)) { // Verifica se o clique ocorreu fora do menu
+            menu.classList.remove('menu-open');
+        }
+    });
+    </script>
 </body>
 </html>

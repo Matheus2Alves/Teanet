@@ -6,3 +6,7 @@ window.addEventListener("scroll", function() {
       menu.classList.remove("menu-hamburguer-scroll");
     }
   });
+
+document.getElementById('burguer').addEventListener('click', function() {
+  document.querySelector('header').classList.toggle('menu-open');
+});
