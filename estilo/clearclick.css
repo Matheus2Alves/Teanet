@@ -76,11 +76,6 @@ h2.txtmain{
   margin-top: 20px;
 }
 
-.misson {
-  
- 
-}
-
 .tecnology{
   margin-left: 10px;
 }
@@ -147,6 +142,10 @@ footer > p{
   color: white;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 #burguer{
   position: fixed;
   top: 13px;
@@ -204,4 +203,82 @@ footer > p{
   color: #e7c224;
 }
 
+@media (min-width: 769px) {
+  body {
+    background: black url(../imagens/bkdesktopclick.jpg) no-repeat fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .efeito-vidro {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255 ,255, 0.18);
+  }
+
+  .efeito-vidro-btt {
+    background: linear-gradient(135deg, rgba(255, 238, 1, 0.551), rgba(255, 251, 0, 0.592));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255 ,255, 0.18);
+  }
+
+  .efeito-vidro-txt {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255 ,255, 0.18);
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  #burguer {
+    display: none;
+  }
+
+  #menu-dropdown {
+    display: inline-block;
+    background: none;
+    box-shadow: none;
+    top: 0;
+    left: 350px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0px 30px;
+  }
+
+  #menu-dropdown li > a {
+    color: white;
+  }
+
+  #menu-dropdown li:hover {
+    background-color: #e7c32455;
+    border-radius: 20px;
+  }
+
+  main{
+    display: grid;
+    grid-template-rows: 2fr;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #maintxt {   
+    width: 400px;
+    position: relative;
+    left: 480px;
+    top: -40px;
+    grid-row: 1;
+  }
+
+  .chatbot {
+    grid-row: 2;
+  }
+}
 
