@@ -10,6 +10,7 @@ html, body{
   width: 100vw;
   height: 100vh; 
   font-family: 'Poppins', sans-serif;
+  overflow-y: hidden;
 }
 
 body{
@@ -29,6 +30,7 @@ header{
 
 header h1{
   padding-left: 5px;
+  color: white;
 }
 
 main{
@@ -81,7 +83,7 @@ h2.txtmain{
 }
 
 .button:hover{
-  background-image: linear-gradient(95deg, #ffffa3, #e7c224);
+  background-image: linear-gradient(95deg, #e7c224, #e7c224);
 }
 
 .button{
@@ -127,12 +129,14 @@ h2.txtmain{
 }
 
 footer{ 
+  position: absolute;
   bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #034aa3;
   height: 50px;
+  width: 100%;
 }
 
 
@@ -204,6 +208,7 @@ footer > p{
 }
 
 @media (min-width: 769px) {
+  
   body {
     background: black url(../imagens/bkdesktopclick.jpg) no-repeat fixed;
     background-size: cover;
@@ -219,7 +224,7 @@ footer > p{
   }
 
   .efeito-vidro-btt {
-    background: linear-gradient(135deg, rgba(255, 238, 1, 0.551), rgba(255, 251, 0, 0.592));
+    background-color: #034aa3
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -253,18 +258,40 @@ footer > p{
     padding: 0px 30px;
   }
 
+  .button {
+    transition: color 1s;
+    overflow: hidden;
+  }
+
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 100%;
+    background-color: #fffb00;
+    transform: skewX(35deg);
+    z-index: -1;
+    transition: width 1s;
+  }
+
+  .button:hover::before {
+    width: 150%;
+  }
+
   #menu-dropdown li > a {
     color: white;
   }
 
   #menu-dropdown li:hover {
-    background-color: #e7c32455;
+    background-color: #034aa3;
     border-radius: 20px;
   }
 
   main{
     display: grid;
-    grid-template-rows: 2fr;
+    grid-template-rows:;
     justify-content: center;
     align-items: center;
   }
@@ -277,8 +304,6 @@ footer > p{
     grid-row: 1;
   }
 
-  .chatbot {
-    grid-row: 2;
-  }
+  
 }
 
