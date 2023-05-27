@@ -183,7 +183,47 @@ footer a{
     color: #e7c224;
 }
 
+.tecnosc {
+    display: none;
+}
 
+@media (min-width: 769px) {
+
+    .tecnosc {
+        display: grid;
+        grid-template-columns: 2fr;
+        color: white;
+        font-family: 'Poppins' sans-serif;
+        height: 100vh;
+    }
+
+    body {
+        background: black url(../imagens/bktecno.png) no-repeat fixed;
+        background-size: cover;
+    }
+
+    .container {
+       display: flex;
+       justify-content: space-between;
+       height: 100vh;
+    }
+
+    .containerex {
+        padding: 20px;
+    }
+
+    .imgsound {
+        grid-column: 1;
+        
+    }
+
+    .txtsound {
+        
+        grid-column: 2;
+    }
+
+    
+}
 
 
 
