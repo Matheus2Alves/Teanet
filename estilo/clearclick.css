@@ -231,16 +231,6 @@ footer > p{
     border: 1px solid rgba(255, 255 ,255, 0.18);
   }
 
-  .efeito-vidro-txt {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255 ,255, 0.18);
-    border-radius: 20px;
-    padding: 20px;
-  }
-
   #burguer {
     display: none;
   }
@@ -297,11 +287,22 @@ footer > p{
   }
 
   #maintxt {   
+    margin: auto;
     width: 400px;
     position: relative;
-    left: 480px;
+    left: 265px;
     top: -40px;
     grid-row: 1;
+  }
+
+  .efeito-vidro-txt {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255 ,255, 0.18);
+    border-radius: 20px;
+    padding: 20px;
   }
 
   
