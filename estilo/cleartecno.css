@@ -189,6 +189,32 @@ footer a{
 
 @media (min-width: 769px) {
 
+    #burguer {
+        display: none;
+      }
+
+    #menu-dropdown {
+    display: inline-block;
+    background: none;
+    box-shadow: none;
+    top: 0;
+    left: 350px;
+    }
+
+    #menu-dropdown li > a {
+        color: white;
+      }
+    
+    #menu-dropdown li:hover {
+    background-color: #034aa3;
+    border-radius: 20px;
+    }
+
+    li {
+    display: inline-block;
+    padding: 0px 30px;
+    }
+
     body {
         background: black url(../imagens/bktest4.jpg) no-repeat fixed;
         background-size: cover;
