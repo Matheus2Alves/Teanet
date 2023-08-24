@@ -111,17 +111,17 @@ header{
 }
 
 .img1{
-    background: rgb(255, 255, 255) url(../imagens/quemsomos.png) no-repeat bottom center fixed;
+    background: rgb(255, 255, 255) url(../imagens/everbody.jpeg) no-repeat bottom center fixed;
     background-size: cover;
 }
 
 .img2{
-    background: white url(../imagens/pessoas\ conversando.png) no-repeat  center center fixed ;
+    background: white url(../imagens/plan-table.jpeg) no-repeat  center center fixed ;
     background-size: cover;
 }
 
 .img3{
-    background: white url(../imagens/escritorio1.png) no-repeat  center center fixed ;
+    background: white url(../imagens/plan.jpeg) no-repeat  center center fixed ;
     background-size: cover;
 }
 
