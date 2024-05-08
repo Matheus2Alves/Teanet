@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Democracia na internet</title>
+    <link rel="stylesheet" href="./estilo/formulario.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <script src="./script/clearclick.js"></script>
+    <header>
+        <h1>Democracia e Acessibilidade na internet</h1>
+        <span class="material-symbols-outlined " id="burguer">menu</span>
+        <nav id="menu-dropdown">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="tecno.html">Tecnologias</a></li>   
+                <li><a href="time.html">Time</a></li>   
+                <li><a href="formulario.html">ClearNews</a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Compartilhe suas ideias</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+        <article>
+            <h2>Compartilhe suas ideias</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fórum da democracia</p>
+    </footer>
+    <script>
+        document.getElementById('burguer').addEventListener('click', function() {
+               event.stopPropagation(); 
+               document.querySelector('header').classList.toggle('menu-open');
+               });
+           document.addEventListener('click', function(event) {
+           var menu = document.querySelector('header');
+           var target = event.target;
+           if (!menu.contains(target)) { // Verifica se o clique ocorreu fora do menu
+               menu.classList.remove('menu-open');
+           }
+       });
+      </script>
+</body>
+</html>
