@@ -131,6 +131,7 @@ h2.txtmain{
 footer{ 
   position: absolute;
   bottom: 0;
+  border: 2px solid yellow;
   display: flex;
   align-items: center;
   justify-content: center;
